@@ -36,7 +36,7 @@ const App = () => {
     <>
       <NavBar />
       <Routes>
-        <Route path='/' element={<UsersList allUser={allUSers} onDelete={handleDelete} />} />
+        <Route path='/usersList' element={<UsersList allUser={allUSers} onDelete={handleDelete} />} />
         <Route path='/add' element={<AddUser addUser={NewUser} totalUsers={allUSers.length} />} />
         <Route path='/edit/:id' element={<EditUser allUser={allUSers} onUpdate={handleUpdate} />} />
       </Routes>
